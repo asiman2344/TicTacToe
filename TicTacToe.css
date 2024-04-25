@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #9CAFAA;
+}
+
+.container{
+    padding-top: 30px;
+    background-color: #9CAFAA;
+    height: 100vh;
+    padding-top: 150px;
+}
+
+.winner-checker{
+    width: 150px;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.winner-checker div{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.active{
+    background-color: #135D66;
+    transition: 0.5s ease;
+}
+
+.ttt-container{
+    background-color: aqua;
+    width: 450px;
+    height: 450px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.row{
+    background-color: #D1BB9E;
+    width: 100%;
+    height: 33.3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell{
+    border: 1px solid #A79277;
+    cursor: pointer;
+    font-size: 70px;
+    font-weight: 700;
+    color: #141E46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cell:hover{
+    background-color: #A79277;
+}
+
+.restart{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.restart button{
+    width: 150px;
+    height: 55px;
+    border: none;
+    font-size: 32px;
+    font-weight: 500;
+    background-color: #135D66;
+    color: #FEFDED;   
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.winner{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
